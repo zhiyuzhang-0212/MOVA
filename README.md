@@ -119,7 +119,7 @@ We provide inference benchmarks for generating an **8-second 360p** videos under
 
 ### Ascend NPU support
 
-We also support **NPU**s. For more details about NPU training/inference, please refer to **[this document](https://github.com/VoiceAgentGroup/mossVG/blob/open-source-npu/ASCEND_SUPPORTS.md)**.
+We also support **NPU**s. For more details about NPU training/inference, please refer to **[this document](https://github.com/OpenMOSS/MOVA/blob/feat/npu/ASCEND_SUPPORTS.md)**.
 
 ## Evaluation
 We evaluate our model through both objective benchmarks and subjective human evaluations. 
