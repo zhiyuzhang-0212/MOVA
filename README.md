@@ -215,7 +215,7 @@ All peak usage numbers below are measured on **360p, 8-second** video training s
 |--------------------------------------|-------------|-------------|-------------|-------------|
 | Low-resource LoRA (single GPU)       | ≈18GB       | ≈80GB       |  RTX 4090   | 600         |
 | Accelerate LoRA (1 GPU)              | ≈100GB      | ≥128GB      |  H100       |  N/A        |
-| Accelerate + FSDP LoRA (8 GPUs)      | ≈50GB       | ≥128GB      |  H100       | TODO        |
+| Accelerate + FSDP LoRA (8 GPUs)      | ≈50GB       | ≥128GB      |  H100       | 22.2        |
 
 > **Note**: Training 8-second 360p videos on RTX 4090 is **not recommended** due to high resource requirements and slow training speed. We strongly suggest reducing video resolution (e.g., 240p) or total frame count to accelerate training and reduce resource consumption.
 
