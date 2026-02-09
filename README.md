@@ -208,6 +208,15 @@ curl -X POST "http://0.0.0.0:30002/v1/videos" \
   -o create_video.json
 ```
 
+### Generation Workflow
+
+We provide an **[AI-assisted video generation workflow](./workflow)** for end-to-end video creation via a Streamlit web UI. It supports:
+
+- **Full Workflow Mode**: Describe a scene in text (optionally upload a first frame) → AI generates first frame if needed → extracts visual elements → rewrites into video description → MOVA generates video
+- **Simple Mode**: Provide prompt + first frame image directly → MOVA generates video
+
+See the [**workflow README**](./workflow/README.md) for setup, configuration (SGLang server, API keys), and usage.
+
 
 ## Training
 ### LoRA Fine-tuning
@@ -270,8 +279,8 @@ All peak usage numbers below are measured on **360p, 8-second** video training s
 - [x] Ascend NPU Fine-tune
 - [x] Ascend NPU Inference
 - [x] SGLang Integration
+- [x] Generation Workflow
 - [ ] Technical Report
-- [ ] Generation Workflow
 - [ ] Diffusers Integration
 
 ## Acknowledgement
