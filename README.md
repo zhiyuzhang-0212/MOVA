@@ -27,6 +27,7 @@ We introduce **MOVA** (**MO**SS **V**ideo and **A**udio), a foundation model des
 - **Asymmetric Dual-Tower Architecture**: Leverages the power of pre-trained video and audio towers, fused via a bidirectional cross-attention mechanism for rich modality interaction.
 
 ## 🔥News!!!
+- 2026/03/14: 🎉We released the **MOVA Benchmark for Arena** (732 samples) on [🤗 Hugging Face](https://huggingface.co/datasets/zhiyuzhang-0212/MOVA_benchmark_for_arena) for reproducible evaluation.
 - 2026/03/09: 🎉**MOVA API** is now available! Apply for your API key at [studio.mosi.cn](https://studio.mosi.cn/docs/models/mova?src=github) to start generating videos programmatically.
 - 2026/03/09: 🎉**ComfyUI support** is here! Thanks to [@richservo](https://github.com/richservo), you can now use MOVA in ComfyUI at low cost via [comfyui-mova](https://github.com/richservo/comfyui-mova).
 - 2026/02/10: 🎉We released **MOVA** [technical report](https://arxiv.org/abs/2602.08794) and update [inference workflow](https://github.com/OpenMOSS/MOVA/pull/29).
@@ -152,6 +153,19 @@ Below are the Elo scores and win rates comparing MOVA to existing open-source mo
 <p align="center">
     <img src="./assets/winrate.png" alt="Win rate comparison" width="100%"/>
 </p>
+
+### MOVA Benchmark for Arena
+
+We release the **MOVA Benchmark for Arena** on Hugging Face for reproducible subjective evaluation. The benchmark contains **732 samples** organized into two subsets:
+
+| Subset | Samples | Description |
+|--------|---------|-------------|
+| MOVA-Bench | 132 | Real-world scenarios across 7 categories: multi-speaker (27), movie (12), sports (20), games (20), shot-effect (30), anime (20), and others (3) |
+| VerseBench (Bilingual) | 600 | Bilingual English-Chinese speech data adapted from [VerseBench](https://huggingface.co/datasets/dorni/Verse-Bench), split into set1 (205), set2 (295), and set3 (100) |
+
+Each sample includes a **first-frame image** and a **prompt** (rewritten by the workflow introduced in the paper) for joint image-text to video-audio generation.
+
+🤗 **Download**: [zhiyuzhang-0212/MOVA_benchmark_for_arena](https://huggingface.co/datasets/zhiyuzhang-0212/MOVA_benchmark_for_arena)
 
 ## SGLang Integration
 
@@ -309,6 +323,7 @@ All peak usage numbers below are measured on **360p, 8-second** video training s
 - [x] Technical Report
 - [x] API Access
 - [x] ComfyUI Integration
+- [x] Arena Benchmark
 - [ ] Diffusers Integration
 
 ## Citation
